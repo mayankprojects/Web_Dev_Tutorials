@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animations</title>
+</head>
+<style>
+    .container {
+        background-color: greenyellow;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .box {
+        background-color: lightcoral;
+        margin: 12px 23px;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* animation-name: mayank1;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 2s; */
+        animation-direction: reverse;
+        /* animation: animation-name | animation-duration animation-timing-function | animation-delay  animation-iteration-count | animation-fill mode */
+        animation: mayank1 2s ease-in 2s 3 forwards;
+    }
+    #new{
+        background-color: lightcoral;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        animation-name: mayank2;
+        animation-duration: 8s;
+        animation-iteration-count: 3;
+        /* animation-fill-mode: forwards; */
+        /* animation-timing-function: ease-in;
+        animation-delay: 2s;
+        animation-direction: reverse; */
+        
+    }
+
+    @keyframes mayank2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 250px;
+            left: 0px;
+        }
+
+        75% {
+            top: 250px;
+            left: 250px;
+        }
+
+        100% {
+            top: 0px;
+            left: 250px;
+        }
+    }
+
+    @keyframes mayank1 {
+        from {
+            width: 100px;
+        }
+
+        to {
+            width: 500px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+        <div id ="new">
+            This is new box
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    animation-name: mayank -> name of the animation
+    animation-duration: 2s -> how much time animation should occur
+    animation-iteration-count: 3-> how many times animation should occur
+    animation-fill-mode: alternate(after animation stick to postion as to)  
+                         forward(after animation stick to postion as from)
+    animation-timing-function: ease-in(slow at start)
+                               ease-out(slow at end)
+                               ease-in-out(slow at start and end)
+    animation-delay: 3s-> animation starts with a delay of given time
+    animation-direction: reverse; -> direction of the animation
+
+    -> animation shorthand
+    animation: animation-name | animation-duration animation-timing-function | animation-delay  animation-iteration-count | animation-fill mode 
+
+    @key-frames animation_name{
+        from{
+            start-property
+        }
+        to{
+            end-property
+        }
+    }
+    
+    @keyframes mayank2 {
+        -> property after completion of certain part of the animation
+        0% {
+        }
+        25% {  
+        }
+        75% {
+        }
+        100% { 
+        }
+    }
+ -->

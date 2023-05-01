@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+</head>
+
+<body>
+
+    <script>
+        var str = "This is a string"
+        console.log(str);
+        var pos = str.indexOf('is'); //first occurance - 2
+        console.log(pos);
+        var pos = str.lastIndexOf('is') //last occurance - 5
+        console.log(pos);
+
+        // Substring from a string
+        var substr = str.slice(1, 6); // from 0 to n-1
+        var substr1 = str.substr(1, 6); // here n = lenght
+        console.log(substr);
+        console.log(substr1);
+
+        var rep = str.replace('string', 'mayank'); // replaces the strings
+        console.log(str); // but does not changes the original string
+        console.log(rep)
+
+        console.log(str.toUpperCase()); //string to upper case
+        console.log(str.toLowerCase()); //string to lower case
+
+        var newstr = str.concat(' New string');
+        console.log(newstr);
+
+        var space = "  Hello, how are you   ";
+        console.log(space.trim()); //trims spaces from start and end
+
+        var char2 = str.charAt(2); //return element at index
+        console.log(char2); // 2 is index here
+
+        console.log(str[2]);
+
+    </script>
+</body>
+
+</html>
+<!-- 
+Method of the string
+
+var str = "This is a string"
+ - console.log(str.indexOf('is'));          2                               returns index of first occurance of is                                  
+ - console.log(str.lastIndexOf('is'));      5                               returns index of last occurance of is                    
+ - console.log(str.slice(1, 6));            his i                           return string from index 1 to 6 - 1;
+ - console.log(str.substr(1, 6));           his is                          return string from index 1 to lenght 6 including 1;
+ - console.log(str.toUpperCase());          THIS IS A STRING                return string converted to upper case
+ - console.log(str.toLowerCase());          this is a string                return string converted to lower case
+ - console.log(str.concat(' New string'));  This is a string New string     return string with new string concatinated to it.    
+ - console.log(space.trim());               This is a string                return string whose space is trimmed from start and end
+ - console.log(str.charAt(2));              i                               return char at index 2
+ - console.log(str[2]);                     i                               return char at index 2 
+
+ -->

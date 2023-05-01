@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .container {
+            font-size: 10px;
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 5em;  /*Relative to container font size 5 x 10 = 50 px*/
+            padding: 3em;   /*Relative to first font size 3 * 50 = 150px*/
+        }
+        #second{
+            font-size: 3rem;  /*Relative to root element font size 3 x 20 = 60 px*/
+            padding: 3rem;  /*Relative to root element font size 3 x 20 = 60 px*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id=first>This is first heading</h1>
+        <h1 id=second>This is second heading</h1>
+        <h1 id=third>This is third heading</h1>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+Responsive design -> website adapt according to new resolutions
+Different size units
+1) em -> size relative to the parent size. 
+2) rem -> size relative to the root element
+3) vh -> view height, set height as per the view of the content (full screen)
+4) vw -> view width, set width as per the view of the content (full screen)
+
+ -->

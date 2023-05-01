@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SetTimeOut and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time Now is : <span id="time"></span>
+    </div>
+    <script>
+        function greet(name, exit)
+        {
+            console.log("Hello! Good Morning " + name + exit);
+        }
+        function greet1(name, exit)
+        {
+            console.log("Hello! Good Morning " + name + exit);
+        }
+        function greet2(name, exit)
+        {
+            console.log("Hello " + name + exit);
+        }
+        
+        setTimeout(greet, 5000, "Mayank", " Bye! takecare");
+        
+        timeOut = setTimeout(greet1, 3000, "Sonu", " Bye! takecare");
+        clearTimeout(timeOut);
+
+        setInterval(greet2, 2000, "Kashi ", "Good Night");
+        
+        // Application -> Creating a clock
+        function displayTime(){
+            time = new Date();
+            document.getElementById('time').innerHTML = time;
+        }   
+        setInterval(displayTime, 1000);
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    setTimeout -> Allows us to run the function once after the interval of time
+    setInterval -> Allows us to run the function repeatedly after the interval of time
+    clearTimeout -> Clears the timeout already defiend. 
+
+    ## For setTimeout use
+    setTimeout(function_name, time, fxn_arguments...);
+    - Do not call the function,just write the name.
+    - list all actual argument after the time
+
+    ## For clearTimeout use
+    - setTimeput return some id which can be store in a var 
+    - pass that var in clearTimeout. 
+    - Now the timeout would be cleared
+
+    ## For setInterval use
+    - same as setTimeout
+ -->

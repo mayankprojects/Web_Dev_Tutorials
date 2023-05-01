@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar
+        {
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            padding: 7px 3px;
+            margin: 1px 12px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar input{
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            padding: 4px 0px;
+            margin: 3px 13px;
+            float: right;
+            text-align: center;
+        }
+        .navbar li a:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href = "#">Home</li>
+                <li><a href = "#">About</li>
+                <li><a href = "#">Services</li>
+                <li><a href = "#">Contact Us</li>
+                    <div class="seach">
+                        <input type="text" name="search" id="find" placeholder="Search Here">
+                    </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+<!-- 
+FOR MAKING A NAVBAR
+header
+    nav (bgcolor)
+        ul (overflow)
+           li (float and list-style)
+
+for navbar(add bgcolor)
+for li(float:left; list-style:none;(removes dots))
+for ul(overflow:auto)
+for li (add padding and margin)
+ -->

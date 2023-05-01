@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulating DOM</title>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact US</li>
+            <li>More</li>
+        </ul>
+    </div>
+    <div class="container">
+
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+
+        let sel = document.querySelector('.container');
+        console.log(sel);
+        let sel1 = document.querySelector('#nav>li');
+        console.log(sel1);
+
+        let sel3 = document.querySelectorAll('li');
+        console.log(sel3);
+
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    DOM = Document object model  -> entire body of the html which can be accessed through javascript
+
+    1) accessing using id of the element
+        let main = document.getElementById('id_of_element');
+    ->  id.innerHTML -> This will give the html in the form of string 
+    ->  id.innerHTML = "Changed_text" -> This will change the html associated with the id
+
+    2) accessing using class of the element
+        let container = document.getElementsByClassName('class_name');
+        classname[0] -> used to grab first html of first class. 
+        classname[1] -> used to grab first html of second class. 
+    
+    3) accessing using the selector of the element
+        let sel = document.querySelector('.container');  
+        -> returns the first html having the class container
+    
+    4) For accessing all the maching element
+        let sel3 = document.querySelectorAll('li');
+        -> returns all the li inside the nav
+
+ -->

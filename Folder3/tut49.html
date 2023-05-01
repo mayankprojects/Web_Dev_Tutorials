@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | strings and stings methods</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id = "content">Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis blanditiis quo optio rem hic
+            ducimus earum tempore quod, ipsam deserunt a reprehenderit provident quam, amet dolorum delectus minima
+            ipsum nihil. Hic.</p>
+    </div>
+    <script>
+        var str = "th'is";
+        var str1 = 'th"is';
+        var name = "Mayank";
+        var message = " is a good boy";
+
+        var temp = `${name} is a good humand and ${str} is not same as ${str1}`;
+        console.log(name + message);
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`Lenght of name is ${len}`);
+        
+        console.log("Hello\nWorld\tLets\\Explore");
+
+        document.getElementById('content').innerHTML = '<h3> This is a h3 heading</h3>'
+    </script>
+</body>
+
+</html>
+<!-- 
+
+Strings
+1) decleration -> var str = "";
+                  var str = '';
+                  var str = ``;
+2) to print the value of string using its variable name
+    ${name_of_variable}   // Can only be used with ``
+
+3) escape sequences
+    \n -> new line  \t -> vertical tab \\ -> blackslash
+-----------------------------------------------------------
+
+4) Way to insert a string in html
+document.getElementById('content').innerHTML = '<h3> This is a h3 heading</h3>'
+ -->

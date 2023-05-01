@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: lightgoldenrodyellow;
+            border: 2px solid red;
+            padding: 33px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            
+            Home About ContactUs
+        </div>
+        <div id="section" class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit placeat a, veritatis itaque quaerat natus
+            harum iusto assumenda autem, hic accusantium illo!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ab accusantium harum inventore tempora, sequi
+            dolor asperiores nisi quasi, sapiente amet illum possimus quas! Quam pariatur, aspernatur eaque rerum earum
+            alias. Aliquam consectetur ducimus dolorum voluptas, animi adipisci doloribus, omnis architecto tempore
+            temporibus pariatur alias sequi itaque accusamus? Placeat animi iure quis ipsum amet doloremque.
+        </div>
+        <footer class = "item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At unde doloremque minima saepe magni! Quibusdam non ullam perferendis quisquam animi ea mollitia inventore ipsam quos vero. Incidunt, magnam. Ea, alias?
+        </footer>
+    </div>
+</body>
+
+</html>
+<!-- 
+    1) used id and give the grid area name to the items
+    2) In the parent use 
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+    The things gets the same ratio wrt the whole page as written. 
+ -->

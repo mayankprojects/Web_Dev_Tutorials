@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="backend.php"> <!--Place where data should get submitted-->
+        
+        <label for="Naam">Name:</label>
+        <div>
+            <input type="text" name = "myName" id="Naam">
+        </div>
+        <br>
+
+        <div>
+            Role: <input type="text" name = "myRole">
+        </div>
+        <br>
+
+        <div>
+            Id: <input type="number" name="myId">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name = "myEmail"> <!--name attribute is used to help backend to recognize the tag-->
+        </div>
+        <br>
+
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+
+        <div>
+            Hobbies: Sports <input type="checkbox" name ="myHobbies" > Reading <input type="checkbox" name="myHobbies" >
+            Cooking <input type="checkbox" name="myHobbies" >
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name = "myGender"> Others <input type="radio" name = "myGender">
+        </div>
+        <br>
+
+        <div>
+            <label for="country">Your Country:</label>
+            <select name="myCountry" id="country">
+                <option value="India">India</option>
+                <option value="India"selected>USA</option> <!--By default selected-->
+                <option value="India">Australia</option>
+                <option value="India">Russia</option>
+            </select>
+        </div>
+        <br>
+
+        <label for="text">Write about yourself:</label>
+        <div>
+            <textarea name="mySeld" cols="30" rows="5" id="text"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</body>
+</html>
+
+<!-- 
+form tag, action attribute
+div - it is used for creating divisions in html. It works like a container. 
+
+Different input attributes
+A) type
+ - text (for text input)
+ - number (for numerial input)
+ - email (for email)
+ - date (date as input)
+ - checkbox (multiple options)
+ - radio (single option) ->name attribute should be same
+ - submit (submiting the form to backend)
+ - reset (reseting the form)
+
+B) name -> used for backend connectivity
+
+textarea -> used for entering large text area. 
+
+select and option -> used for drop down menu. 
+
+lable tag -> space choosen as text is clicked.
+in for attribute of lable tag give the same id as that of input tag.

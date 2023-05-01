@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    .container {
+        font-size: 23px;
+        ;
+        background-color: blanchedalmond;
+        border: 2px solid red;
+        border-radius: 10px;
+        padding: 23px;
+        margin: 22px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+<style>
+</style>
+
+<body>
+    <div class="container">
+        Current time is: <span id="time"></span>
+    </div>
+    <script>
+        //For getting the date use the function
+        let dt = new Date();  //now object and date constructor
+        console.log(dt);
+
+        // For getting the reference date use
+        let dt1 = new Date(0); //referance date
+        console.log(dt1);
+
+        // Date 1000 the reference date
+        let dt2 = new Date(1000); //reference date + 1000ms
+        console.log(dt1);
+
+        // For print a given date
+        let newDate = new Date("2029-09-30");
+        console.log(newDate);
+
+        // For printed a certain date (year, month-1, date, hour, minute, second)
+        let newDate1 = new Date(3020, 4, 6, 9, 3, 2);
+        console.log(newDate1);
+
+        // ---------------------------------------------------------
+        // For printing the year
+        let yr = newDate1.getFullYear();
+        console.log("The year is " + yr);
+
+        // For printing the date
+        let date = newDate1.getDate();
+        console.log("The date is " + date);
+
+        // For printing the month
+        let month = newDate1.getMonth();
+        console.log("The month is " + month);
+
+        // For printing the hours
+        let hours = newDate1.getHours();
+        console.log("The hours is " + hours);
+        // ------------------------------------------------------------
+
+        // --------------------------------------------------------
+        // Changint the date values
+        newDate1.setDate(5);
+        newDate1.setMinutes(29);
+        console.log(newDate1);
+        // ----------------------------------------------------------
+
+        // Printing the current date
+        console.log(Date.now());
+
+        // For printing a Timer
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
+<!-- 
+    - For getting the date use the function 
+      let dt = new Date();  // here dt is the object and date is the constructor
+      console.log(dt);
+
+
+    
+ -->

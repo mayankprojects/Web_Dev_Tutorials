@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selector</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        a[target] {
+            font-size: 34px;
+            color: darkgreen;
+        }
+
+        a[target='_self'] {
+            color: red;
+        }
+
+        li:nth-child(3) {
+            font-weight: bold;
+        }
+
+        li:nth-child(2n+0){   /*starts with n = 0 and goes on*/
+            color: red;
+        }
+
+        /* Oddchild */
+        li:nth-child(odd){
+            background-color: lightblue;
+        }
+
+        /* Evenchild */
+        li:nth-child(even){
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target=_blank>Go to google</a></h1>
+        <h1><a href="https://reddit.com" target=_self>Go to reddit</a></h1>
+        <form action="fake.php">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item6">Item6</li>
+            <li class="item" id="item7">Item7</li>
+            <li class="item" id="item8">Item8</li>
+            <li class="item" id="item9">Item9</li>
+            <li class="item" id="item10">Item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    More pseudo selector 
+    1) input[type='text'] -> if input is text 
+    2) a[target] -> if anchor is targeted
+    3) a[target='_self'] -> if target is self
+    
+    nth-child pseudo selector
+    1) li:nth-child(3)  -> for the third element in the list
+    2) li:nth-child(2n+0)  -> n starts with 0 till the end
+    3) li:nth-child(odd)   -> for all odd elements
+    4) li:nth-child(even) -> for all even elements
+
+ -->

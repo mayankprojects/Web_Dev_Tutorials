@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>This is tutorial of loops</p>
+    </div>
+    <script>
+        // For loops
+        for (i = 0; i <= 3; i++) {
+            console.log(i);
+        }
+        // for loop to iterate an array
+        let frieds = ["Prasant", "Ashish", "Aditya", "Saurabh", "Abhay"];
+        for (i = 0; i <= 4; i++) {
+            console.log("Hello " + frieds[i]);
+        }
+
+        // Using mordern js Loop for array
+
+        //For each loop
+        frieds.forEach(function f(element) {
+            console.log("Bye " + element + " to mordern JS");
+        });
+
+        //for of loop 
+        for (element of frieds)  //Best for loop
+        {
+            console.log("Hello " + element + " to mordern JS");
+        }
+
+        let emp = {
+            name: "Aman",
+            age: 19,
+            barnch: "CSE",
+        }
+
+        //for in loop, used to iterate the object
+        for (key in emp) {
+            console.log(`The ${key} of the emp is ${emp[key]}`);
+        }
+
+        // while loop in js
+        let j = 0;
+        while (j < 4) {
+            console.log(j + "is less than 4");
+            j++;
+        }
+
+        // do while loop  - print at least one
+        let k = 0;
+        do {
+            console.log(k + "is less than 4");
+            k++;
+        } while (k < 4)
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    LOOPS in Java script 
+    
+    1) for loop
+    2) while loop 
+    3) do while loops
+
+-> For iterating array
+let arr = [1, 2, 34, "Mayank"];
+
+    4) for each loop 
+        arr.forEach(function f(element)
+        {
+            console.log(element );
+        });
+
+    5) for of loop  
+        for(element of arr)
+        {
+            console.log(element);
+        }
+
+-> For iterationg an object
+    6) for in loops
+    let obj = {
+            name : "Mayank",
+            sal : 2,
+        }
+
+    for(key in obj)
+    {
+        console.log(`${key} and ${obj[key]}`);
+    }
+
+    //Output
+    name and Mayank
+    sal and 2
+
+ -->

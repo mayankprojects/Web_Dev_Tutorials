@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, internal, external</title>
+    <link rel="stylesheet" href="tut14.css">   <!--This is external css-->
+    <!-- This is internal css -->
+    <style>                                   
+        h3{
+            color: purple;
+            background-color: lightblue;
+        }
+        strong{
+            background-color: blueviolet !important;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is  CSS Tutorial</h2>
+    <h3>This tutorial is quite infomative</h3>
+
+    <!-- This is inline css -->
+    <p style="color: red; background-color :yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet alias, exercitationem voluptatem odio cum at repellendus incidunt tempore nam beatae reiciendis blanditiis ratione qui harum minus veniam. Voluptatem, nemo.</p>
+    <br>
+    <strong style="background-color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto fugit asperiores cumque voluptas perferendis.</strong>
+</body>
+</html>
+
+<!-- 
+    Priority Rules
+    1) Inline css has the highest priority out of all.
+    2) Out of external and internal css, which is written afterwards is given more priority.
+    3) But if we add !important with the internal css, its priority becomes highest out of all. 
+ -->

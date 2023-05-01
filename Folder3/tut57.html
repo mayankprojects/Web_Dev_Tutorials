@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn {
+            padding: 8px 14px;
+            color: white;
+            background-color: black;
+            border: 2px solid red;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is the heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate excepturi tenetur,
+            veritatis at
+            blanditiis veniam! Ex inventore suscipit asperiores molestias, animi explicabo perspiciatis at dolorum
+            itaque quae expedita minima ipsa dignissimos id tempore. Assumenda aliquam delectus repellendus adipisci,
+            exercitationem, laudantium voluptas eum fugit ex illo quisquam aut voluptatem eveniet. Facilis ad optio
+            reprehenderit, vero adipisci assumenda at! Odit non qui rem voluptas sapiente fuga dolorem omnis,
+            perspiciatis accusantium quae consequuntur eaque reiciendis asperiores. Voluptatem voluptates rem excepturi,
+            ex nulla accusamus assumenda aperiam hic, atque doloremque tempora suscipit, sapiente obcaecati fugiat
+            similique nam quia! Dolorem corporis recusandae cupiditate repellat tenetur enim. Officiis quidem beatae ut
+            cupiditate similique maxime. Nam repellendus ad, voluptates quisquam dolor voluptatum sapiente corrupti
+            necessitatibus illum, veniam optio sit culpa.</p>
+    </div>
+    <button id="btn" onclick="hidetoggle()">Show/Hide</button>
+    <script>
+        // let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside')
+            console.log('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            alert('Mouse Outside')
+            console.log("Mouse Outside")
+        });
+        
+        
+        function hidetoggle() {
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Event -> some sort of acion or signal
+    Event Fire -> event / action occured
+    Some brower events:
+    - click (simple click)
+    - contextmenu (for right click)
+    - mouseover (taking mouse on the element)
+    - mouseout (taking mouse out the element)
+    - mousedown (mouse button pressed)
+    - mouseup (mouse button released)
+
+
+    
+    1) give some some value to a event. 
+        onclick = hide(); // on click run hide function. 
+    2) Now make that hide function
+    3) Inside that hide fuction grap a element by id
+    4) now change the CSS of that element using (idname.style.property = value);
+
+    5) Every element in the html having a id is a global variable by default whose name is same as that of the id. 
+
+    6) Adding event listener for an element. For certain event perform some action. 
+
+
+
+ -->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables/ Custom properties</title>
+    <style>
+        :root {
+            --primary-color: lightblue;  /*defined */
+            --secondary-color: cyan;     /*defined */
+            --my-width: 1300px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color); /*used*/
+            height: 400px;
+            width: var(--my-width);
+            margin: auto;
+        }
+
+        .box {
+            /* --box-color: cyan;   defined */
+            background-color: var(--secondary-color);     /*used*/
+            box-shadow: 11px 11px 7px var(--secondary-color);   /*used*/
+            margin: 2px 9px;
+            border: 3px solid red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    1) In css a variable can be defined and used. syntax --variable-name: property;
+    2) Can be defined with global scope -> within the :root{} selector
+    3) Can be defined with local scope -> within come class or id selector
+    4) For using -> property:var(--variable-name);
+ -->

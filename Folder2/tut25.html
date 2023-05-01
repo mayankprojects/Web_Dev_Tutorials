@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3333px;
+        }
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        #box1 {
+            position: relative;
+            top: 34px;
+            left: 9px;
+        }
+        #box2 {
+            position: absolute;
+            top : 34px;
+            left: 234px;
+        }
+        #box3{
+            position: fixed;
+            left: 1223px;
+            bottom: 3px; /*works with fixed*/
+        }
+        #box4{
+            position: sticky;
+            top: 45px;
+            left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1.relative</div>
+        <div class="box" id="box2">2.absolute</div>
+        <div class="box" id="box3">3.fixed</div>
+        <div class="box" id="box4">4.sticky</div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Types of position in CSS (postion + (top, bottom, left, rigtht))
+    1) static(default) -> HTML elements are positioned static by default. Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+    2) relative  -> An element with position: relative; is positioned relative to its normal position.
+
+    3) absolute  -> An element with position: absolute; is positioned relative to the nearest positioned ancestor
+
+    4) fixed     -> it always stays in the same place even if the page is scrolled.
+    5) sticky    -> element sticks with the top postion
+ -->

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Dancing+Script&family=Rubik+Moonrocks&display=swap"
+        rel="stylesheet">
+        
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            background: url('./tut33.jpg');
+            background-size: cover;
+        }
+        /* header::before{           //applying the opacity just to the background//
+            background: url('./tut33.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            
+        } */
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            font-family: 'Baloo 2', cursive;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Rubik Moonrocks', cursive;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 27px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        section {
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 3px 124px;
+        }
+
+        section::after {
+            content: "This is a content";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class=navigation>
+                <li class="class">Home</li>
+                <li class="class">About</li>
+                <li class="class">Services</li>
+                <li class="class">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam explicabo quis enim dignissimos
+            accusantium, tenetur animi eaque repudiandae exercitationem, quibusdam nemo veritatis quas optio
+            voluptatibus ducimus itaque. Reprehenderit nostrum corrupti ipsam tenetur iste!</p>
+    </section>
+    <hr>
+</body>
+
+</html>
+
+<!-- 
+    before and after selectors- 
+    tag::before -> before the tag
+    tag::after -> after the tag
+
+# Setting backgroung image
+1) background: url('./tut33.jpg');
+   background-size: cover;
+2) background: url('./tut33.jpg') no-repeat center center/cover;
+3) toptag::before  (for adding opacity)
+    a)bg image | b)content | c)position:absolute (t:l:0) |d)wd:ht:100% 
+    e)z-index  | f)opacity
+    
+ -->

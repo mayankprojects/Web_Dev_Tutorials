@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a arrow function tutorial.
+    </div>
+    <script>
+        // function greet()
+        // {
+        //     console.log("Good Morning");
+
+        // }
+
+        // Arrow Function
+        greet = () => console.log("Good Morning");
+
+        greet();
+
+        let sum2 = (a, b) => a + b;
+        let half = a => a / 2;  //single argument no brackets
+        console.log(sum2(12, 23));
+        console.log(half(33));
+
+        setTimeout(() => {
+            console.log("We are inside settimeout")
+        }, 3000);
+
+        let obj1 = {
+            names: ["mayank", "Rohan", "Haris", "DJKhiladi"],
+            greeting: "Yeah ",
+            speak() {
+                this.names.forEach(element => {     //lexical this
+                    console.log(this.greeting + "Yo Yo " + element)
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    ##Arrow function (=>) is a shortcut for writing a function
+    Examples:
+1)  let greet = () => console.log("Good Morning");
+2)  let sum = (a, b) => a+b;
+3)  let sq = a => a*a;
+
+    ##Set timeout and arrow function ->
+        setTimeout(() => {
+            console.log("We are inside settimeout")
+        }, 3000);
+
+    ##For each loop and arrow function
+    let arr = [1, 2, 3, "Sonu"];
+
+        //Using for each loop without =>
+        arr.forEach(function f(element) {
+             console.log(element);
+         });
+        
+        //Using for each loop with =>
+        arr.forEach(element => {
+            console.log(element);
+        });
+ -->

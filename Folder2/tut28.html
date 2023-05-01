@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .container {
+        height: 500px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        /*Initialize the container as flex box*/
+
+        /* Flex properties for flex container */
+
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+
+    }
+
+    .item {
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+        width: 150px;
+        height: 150px;
+
+    }
+    #item1{
+        order: 3; 
+        /* flex-grow: 2; */
+        /* flex-shrink: 3; */
+    }
+    #item2{
+        order: 2;
+        /* flex-grow: 2;
+        flex-shrink: 2; */
+        /* flex-basis: 400px; */
+    }
+    #item3{
+        order: 3;
+        /* flex: 2 4 200px; */
+        /* align-self: flex-start; */
+        /* align-self: flex-end; */
+        /* align-self: center; */
+    }
+</style>
+
+<body>
+    <h1>This is a Flexbox Tutorial</h1>
+        <!--Flex container-->
+    <div class="container">
+        <!--Flex items-->
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>
+
+<!-- 
+- Display flex
+1) Displayes elements one after the another. 
+
+-- Flex property
+flex-direction: row;  -> by default (row wise)
+flex-direction: column; -> coloumn wise
+flex-direction: row-reverse; -> rowise but reversed
+flex-direction: column-reverse; -> coloumn wise reversed
+
+flex-wrap: wrap (wrap content for responsive design)
+flex-wrap : wrap-reverse (reverse wraping of content)
+
+// flex-flow : direction wrap; (shorthand)
+
+justify-content: center;  - (horizontally center)
+justify-content: space-between; (space b/w element)
+justify-content: space-evenly; (eq space b/w element and margin)
+justify-content: space-around; (Same as evenly, but more space b/w elements)
+
+align-items: center; (align item vertically)
+align-items: flex-end; (element at end)
+align-items: flex-start; (by default, at top) 
+align-items: stretch; (????? in doubt, works with wrap)
+
+
+
+-> Properties of flex items
+
+order - (Higher the order, later it shows in the container)
+flex-grow - (More the value more faster it will grow)
+flex-shrink - (More the value faster it will shrink)
+flex-basis : (Used to set height/width)
+            (it is width if flex-direction is row and 
+            it is height if flex direction is coloumn)
+// flex : grow shrink basis (shorthand)
+
+align-self: flex-start; (vetical top , by default)
+align-self: flex-end; (At end vertically)
+align-self: center; (At center vertically)
+
+ -->

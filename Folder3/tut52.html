@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a simple html
+        <script>
+            // Primitive data types
+            let myvar = 34;
+            let myvar1 = "String"
+            let myvar2 = true;
+            let myvar3 = null;
+            let myvar4 = undefined;
+
+            // Derived data types
+
+            // Array - object
+            let names = [1, 2, 3, "Mayank"]; //any types of data
+            console.log(names);
+            console.log(names[2]);
+
+            // Array - object using new
+            let name = new Array(11, 2, "Harray", 3, "Mayank", true);
+            console.log(name);
+
+            //length of array
+            console.log(name.length)
+
+            // Sorting an array
+            let arr = new Array(1, 23, 2312, 41, 441);
+            arr = arr.sort();
+            console.log(arr);
+
+            // insering element in end
+            arr.push("last pos");
+            console.log(arr);
+
+            //made an array of 23 undefined elements
+            let arr1 = new Array(23);
+            console.log(arr1);
+
+            // Objects -> user defined
+            let emp = {
+                name: "Mayank",
+                salary: "100$",
+                school: "BPS",
+                college: "CU",
+            }
+            console.log(emp);
+            console.log(emp.college);
+
+        </script>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Data Types
+        - Primitive (integer, string, null, boolean, undefined)
+        - Derived (Array)
+    
+    ##Array
+    Array -> it is an object in js
+    - let names = [1, 2, 3, "Mayank"]                                 -> can store any type of data 
+    - let name = new Array(11, 2, "Harray", 3, "Mayank", true)        -> array using new as an object
+     
+    ##SOME ARRAY FUNCTIONS
+    let arr = [21, 23, 421, "mayank", undefined];
+
+    console.log(arr.length); -> lenght of an array
+    console.log(arr.sort());  -> sorting an array
+    arr.push("last") -> inserting an element at end
+    console.log(arr);
+
+    let arr1 = new Array(23);  -> making array of n element
+    console.log(arr1);
+
+    ##User defined objects
+    let emp = {
+                name: "Mayank",
+                salary: "100$",
+                school: "BPS",
+                college: "CU",
+            }
+            console.log(emp);     -> accessing the entire varible
+            console.log(emp.college); -> accessing the specific element of the variable
+
+ -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr); 
+            grid-column-gap: 32px;
+            grid-row-gap: 12px;
+        }
+
+        .item {
+            border: 2px solid red;
+            background-color: lightblue;
+            padding: 12px;
+
+        }
+
+        .item:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* Shorthand */
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+    </div>
+</body>
+
+</html>
+
+<!--
+    grid-column-gap: 32px;  -> gap between the columns
+    grid-row-gap: 12px; -> gap between the rows
+  
+    grid-template-rows: repeat(3, 200px) -> 3 rows with 200px each
+    grid-template-rows: repeat(3, 1fr) -> 3 rows with with equal height(same proportion)
+
+    grid-template-coloums: repeat(3, 200px) -> 3 colums with 200px each
+    grid-template-coloums: repeat(3, 1fr) -> 3 coloums with with equal height(same proportion)
+   
+    grid-column: 1 / span 2; -> merges 2 coloums
+    grid-row: 1 / span 2; -> merges 2 rows
+  -->

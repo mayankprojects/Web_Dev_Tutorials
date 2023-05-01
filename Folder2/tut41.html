@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-auto-rows: 2fr;
+
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1rem;
+}
+.box{
+    background-color: lightblue;
+    border: 2px solid black;
+}
+</style>
+<body>
+<div class="grid">
+    <div class="box">This is box1</div>
+    <div class="box">This is box2</div>
+    <div class="box">This is box3</div>
+    <div class="box">This is box4</div>
+    <div class="box">This is box5</div>
+    <div class="box">This is box6</div>
+    <div class="box">This is box7</div>
+    <div class="box">This is box8</div>
+    <div class="box">This is box9</div>
+    <div class="box">This is box10</div>
+</div>
+</body>
+</html>
+
+<!-- 
+    1) div.box{This is box$}*10
+    2) grid-template-rows: 1fr 2fr 3fr -> first three rows in 1:2:3 ration
+    3) grid-auto-row: 2fr -> rest rows in 2 ration height
+    4) grid auto -coloums: ; -> set these rows in coloums
+ -->

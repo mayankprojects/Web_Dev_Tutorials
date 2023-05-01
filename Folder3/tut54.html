@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, prompt and confirm</title>
+</head>
+
+<body>
+    <div class="container">
+        this is a page
+    </div>
+    <script>
+        // Alert
+        alert("This is a message")
+
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        let deletePost = confirm("Do you really want to delete this post?");
+        console.log(deletePost);
+        if (deletePost)
+            //Code to delete
+            console.log("Deleted");
+        else
+            //Code to cancle delete action
+            console.log("Not deleted");
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Alert
+    -> throws a modal box with a message 
+    -> it is needed to be closed to access the webpage
+    -> It does not return anything
+
+    prompt
+    -> throws a modal box which ask for a input
+    -> default value can be given to that input
+    -> prompt return the input value that can be store in a var
+
+    confirm
+    -> throws a modal box which confirms your action
+    -> if confirmed i.e yes it retrns true
+    -> else return false
+
+ -->

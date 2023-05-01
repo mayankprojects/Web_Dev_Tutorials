@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            width: 600px;
+            border: 3px solid purple;
+            border-radius: 13px;
+            margin: 33px auto;
+            background-color: rgb(185, 221, 222);
+        }
+
+        .items {
+            border: 3px solid red;
+            border-radius: 13px;
+            margin: 20px 20px;
+            padding: 13px 19px;
+            background: rgb(189, 216, 157);
+            
+        }
+
+        #fruits {
+            float: left;
+            width: 43%;
+        }
+
+        #computer {
+            float: right;
+            width: 43%;
+        }
+        #stationary{
+            /* float: left; */  
+            clear :both;
+            width: 93%;
+        }
+        p, h3{
+            /* text-align: center;
+            text-align: right;
+            text-align: left; */
+            text-align: justify;
+
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="friutspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, incidunt
+                aperiam expedita reprehenderit vitae dolor eos tenetur dolores, nobis esse quidem ipsa blanditiis,
+                voluptates natus exercitationem. Quia, eos. Aut neque sint quam voluptatibus pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sunt, omnis neque illum ipsum earum, nostrum, beatae modi nisi consectetur explicabo error nam atque ad soluta suscipit culpa vel impedit distinctio molestias iusto. Exercitationem! lorem50</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="comppara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, incidunt
+                aperiam expedita reprehenderit vitae dolor eos tenetur dolores, nobis esse quidem ipsa blanditiis,
+                voluptates natus exercitationem. Quia, eos. Aut neque sint quam voluptatibus pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sunt, omnis neque illum ipsum earum, nostrum, beatae modi nisi consectetur explicabo error nam atque ad soluta suscipit culpa vel impedit distinctio molestias iusto. Exercitationem! lorem50</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, incidunt
+                aperiam expedita reprehenderit vitae dolor eos tenetur dolores, nobis esse quidem ipsa blanditiis,
+                voluptates natus exercitationem. Quia, eos. Aut neque sint quam voluptatibus pariatur.</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>Glasses</h3>
+            <p id="stpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, incidunt
+                aperiam expedita reprehenderit vitae dolor eos tenetur dolores, nobis esse quidem ipsa blanditiis,
+                voluptates natus exercitationem. Quia, eos. Aut neque sint quam voluptatibus pariatur.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+MARGIN AUTO
+automatically sets the margin to keep element in center. 
+only in x cordinates
+margin: y, x; -> margin 34px, auto;
+
+1) float (left, right)
+2) width in %
+3) clear (to avoid overlaping caused by float) (left, right, both)
+4) text align (right, left, center, justify)
+
+ -->
+
+
+ 

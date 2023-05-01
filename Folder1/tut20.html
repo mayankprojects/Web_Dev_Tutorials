@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .container {
+            background-color: rgb(167, 223, 227);
+            border: 2px solid rgb(6, 136, 212);
+
+
+
+            /* padding: 30px;  */
+
+            /* padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;  */
+
+            /* padding: 23px 35px 45px 33px; */
+
+            padding: 34px 19px;
+
+            /* ------------------------------------- */
+
+            /* margin: 34px; */
+
+            /* margin-left: 34px;
+            margin-right: 34px; 
+            margin-top: 34px;
+            margin-bottom: 34px; */
+
+            /* margin: 23px 35px 45px 33px; */
+
+            margin: 34px 19px;
+
+            border-radius: 30px;
+            width: 500px;
+
+        }
+
+        p {
+            color: rgb(249, 3, 3);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h3 {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quos inventore provident quam
+            delectus libero quibusdam suscipit est voluptatibus? Modi consequuntur libero quam delectus illo, deserunt
+            quo ex blanditiis quasi.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quasi neque? Earum accusamus
+            tempore odio quibusdam fugiat dolorem mollitia repellendus explicabo aperiam quae consequuntur, ducimus
+            ratione iure, deleniti perferendis repellat.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eaque inventore, sequi dolores
+            impedit omnis sapiente amet voluptate nisi. Aperiam id explicabo doloribus dolores maxime veniam, voluptatem
+            doloremque necessitatibus. Ea.</p>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- 
+MARGIN 
+    BORDER
+        PADDING
+            ELEMENT
+
+PADDING
+
+0) Margin and padding in all direction same.
+1) Margin and padding in a given direction
+2) Margin and pading in all direction at once.
+3) Margin and pading in (y and x) directions
+
+1) * This is a universal selector
+2) When we assign a width and then we change padding, its width automatically changes. 
+   Thus, to keep width constant we use box-sizing:boder-box;
+
+ -->

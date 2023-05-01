@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div p{
+            color: yellow;
+            background-color: lightgreen;
+            font-weight: bold; 
+        } */
+
+        /* para is contained by ant li which is contained by div */
+        /* div li p{
+            color: yellow;
+            background-color: lightgreen;
+            font-weight: bold; 
+        } */
+
+        /*paragraph just inside the div. The direct child of the div*/
+        /* div > p{  
+            color: yellow;
+            background-color: lightgreen;
+            font-weight: bold; 
+        } */
+        
+        /*para is right after the div. paragraph whose previous sibling is div */
+        /* div + p{  
+            color: white;
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="class"><p>This is a para under li</p></li>   <!-- div li p-->
+            </ul>
+            <p>This is paragraph</p>    <!-- div > p-->
+        </div>
+        <p>This is another paragraph</p>   <!-- div > p-->  <!-- div + p-->
+    </div>
+    <p>This is outermost paragraph</p>  <!-- div + p-->
+</body>
+</html>
+
+
+<!-- 
+    More selector in CSS
+    1) div p -> all paragraph inside any of the div.
+    2) div li p -> all paragraph inside any of the li inside any of the div.
+    3) div > p -> all paragraph just inside the div. para should be the direct child of the div.
+    4) div + p -> all paragraph right after the div. paragraph whose previous sibling is div. 
+ -->

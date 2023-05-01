@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-content: center; */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        }
+
+        .box {
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            padding: 22px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Item1</div>
+        <div class="box">Item2</div>
+        <div class="box">Item3</div>
+        <div class="box">Item4</div>
+        <div class="box">Item5</div>
+        <div class="box">Item6</div>
+        <div class="box">Item7</div>
+        <div class="box">Item8</div>
+        <div class="box">Item9</div>
+        <div class="box">Item10</div>
+        <div class="box">Item11</div>
+        <div class="box">Item12</div>
+    </div>
+</body>
+
+</html>
+<!-- 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    -> used for responsive design; min width 400px, max = 1fr
+    -> after 400px , formation of coloums starts
+ -->

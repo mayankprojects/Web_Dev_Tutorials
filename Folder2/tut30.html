@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+        @media (max-width:500px){
+            #box1{
+                display: block;
+            }
+        }
+        @media (min-width: 500px) and (max-width:700px){
+            #box2{
+                display: block;
+                background-color: violet;
+            }
+        }
+        @media (min-width: 700px) and (max-width:900px){
+            #box3{
+                display: block;
+                background-color: lightblue;
+            }
+        }
+        @media (min-width:900px) and (max-width:1100px){
+            #box4{
+                display: block;
+                background-color: rgb(155, 155, 22);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mein ek iPhone hoon</div>
+    <div class="box" id="box2">Mein ek Tablet hoon</div>
+    <div class="box" id="box3">Mein ek computer hoon</div>
+    <div class="box" id="box4">Mien ek widescreen computer hoon</div>
+</body>
+</html>
+
+<!-- 
+Media query - Inject css only if certain condition is true. 
+    (only screen) -> just for screen
+ -->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional statement</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is string";   //scope of the variable is local
+        var string1 = "This is string2";  //redeclare -> new value
+        console.log(string1);
+        let a = "u"; //block level scope, no redeclate and intialize
+        console.log(a);
+        {
+            let a = "u6";
+            console.log(a);
+        }
+
+        const c = "This can't be change"; //fixed value
+        // c = "change this"; -> error
+        console.log(c);
+
+
+        // Conditional 
+        let age = 34;
+        if (age > 18)   //if else
+        {
+            console.log("Approved age");
+        }
+        else if (age == 2) {
+            console.log("Age is 2");
+        }
+        else {
+            console.log("Underage");
+        }
+
+        // Switch Case
+        const cups = 45;
+        switch (cups) {
+            case 41:
+                console.log("The value of cups is 4");
+                break;
+            case 42:
+                console.log("The value of cups is 4");
+                break;
+            case 43:
+                console.log("The value of cups is 4");
+                break;
+
+            default:
+                console.log("The value of cups is none of these");
+                break;
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+##Let and constant
+- A variable declered using var can be re declared and initialize. scope within the function
+- A variable declered using let can't be redeclared within the same block. scope is wihtin the block
+
+- constant -> value of the constant can't be changes
+
+## CONDITIONAL
+- if else
+- if else ladder
+- switch case
+ -->
